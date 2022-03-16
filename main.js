@@ -247,7 +247,7 @@ $(document).ready(function(){
         id: 'outdoorAdults',
     }))
     $('<h1/>',{
-        text: 'Active',
+        text: 'adults',
         class: 'headingForEatAndDrink',
     }).appendTo('body');
     $('#adultIndoor').click(function(){
