@@ -1,7 +1,7 @@
+/*                                                                                  Main setting   */
 :root{
     --main-color: #00BF6F;
-    --font-color: white;
-    --third-color: ;
+    --font-color: #FAFAFA;
 }
 
 *{
@@ -9,6 +9,8 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*                                                                                           we start making btn     and arrows   */
 .btn{
     width: 80%;
     background-color: var(--main-color);
@@ -40,6 +42,53 @@
     left: 5%;
     
 }
+.arrowContainer{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.arrowBack{
+    border:solid var(--main-color);
+    border-width: 0 8px 8px 0;
+    padding: 6px;
+    display: inline-block;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+
+}
+.arrowBackLine{
+    width: 25px;
+    height: 8px;
+    background-color: var(--main-color);
+    display: inline-block;
+    position: relative;
+    right: 15px;
+    top: -5.5px;
+    
+}
+.goBackButton{
+    border: solid var(--main-color);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: 20px
+}
+.firstSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+    position: absolute;
+    left: 5%;
+    top: 20em;
+}
+/*                                                                                              Now we separete all pages!  index.html   */
 .fullContent{
     background-image:url('/Images/bicycle-koge.jpg');
     background-size: 100vw 100vh;
@@ -58,6 +107,30 @@
     left: 15%;
     width: 70%;
 }
+/*                                                                                                  personalized.html */
+.uFeelLike{
+    color: #FAFAFA;
+    position: absolute;
+    top: -230px;
+    width: 40%;
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.uFeelLike{
+    color: #FAFAFA;
+    position: absolute;
+    top: -230px;
+    width: 40%;
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+}
+/*                                                                                                  eatAndDrink.html */
 .eatDrinkContent{
     background-image: url(./Images/coffe.jpg);
     background-size: cover;
@@ -78,6 +151,7 @@
     left: 15%;
     width: 70%;
 }
+/*                                                                                            active.html       */
 .backgroundActive{
     background-image: url(./Images/active.jpg);
     background-repeat: no-repeat;
@@ -86,6 +160,7 @@
     height: 100vh;
     width: 100wh;
 }
+/*                                                                                           family        */
 .backgroundFamily{
     background-image: url(./Images/pexels-yan-krukov-5792903.jpg);
     background-size: cover;
@@ -94,6 +169,7 @@
     height: 100vh;
     width: 100wh;
 }
+/*                                                                                                   Adults */
 .backgroundAdults{
     background-image: url(./Images/adults.jpg);
     background-size: cover;
@@ -102,24 +178,9 @@
     height: 100vh;
     width: 100wh;
 }
+/*                                                                                                Relax   */
 .backgroundRelax{
     background-image: url(./Images/relax.jpg);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100wh;
-}
-.backgroundCulture{
-    background-image: url(./Images/culture.jpg);
-    background-size: cover;
-    background-position:left;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100wh;
-}
-.exploreBackground{
-    background-image: url(./Images/casper-folsing-7Y8NFmC-WY4-unsplash.jpg);
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -134,15 +195,6 @@
     text-align: center;
     position: absolute;
     top: -150%;
-}
-.exploreHeading{
-    color: #FAFAFA;
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    position: absolute;
-    top:-2.8em;
 }
 .relaxHeading{
     color: #FAFAFA;
@@ -172,68 +224,33 @@
     position: absolute;
     top: -4.5em;
 }
-
-.arrowContainer{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-.arrowBack{
-    border:solid var(--main-color);
-    border-width: 0 8px 8px 0;
-    padding: 6px;
-    display: inline-block;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-
-}
-.arrowBackLine{
-    width: 25px;
-    height: 8px;
-    background-color: var(--main-color);
-    display: inline-block;
-    position: relative;
-    right: 15px;
-    top: -5.5px;
-    
-}
- /*
-.main-content{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2em;
-   
-    height: 700px;
-    background-size: contain;
+/*                                                                                                 Culture  */
+.backgroundCulture{
+    background-image: url(./Images/culture.jpg);
+    background-size: cover;
+    background-position:left;
     background-repeat: no-repeat;
-    background-image: url('/Images/bicycle-koge.jpg');
-    
-}*/
-
-
-
-.goBackButton{
-    border: solid var(--main-color);
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 5px;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    margin: 20px
+    height: 100vh;
+    width: 100wh;
 }
-.firstSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    gap: 10px;
+
+/*                                                                                                 explore  */
+.exploreBackground{
+    background-image: url(./Images/casper-folsing-7Y8NFmC-WY4-unsplash.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100wh;
+}
+.exploreHeading{
+    color: #FAFAFA;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
     position: absolute;
-    left: 5%;
-    top: 20em;
+    top:-1.9em;
 }
 .firstSectionExplore{
     display: flex;
@@ -243,24 +260,10 @@
     gap: 10px;
     position: absolute;
     left: 5%;
-    top: 18em;
+    top: 15em;
 }
-.uFeelLike{
-    color: #FAFAFA;
-    position: absolute;
-    top: -240px;
-    left: 115px;
-    width: 40%;
-    margin: auto;
-    font-size: 50px;
-    text-align: center;
-    align-items: center;
-    font-weight: bolder;
-}
-#listElements{
-    position: absolute;
-    bottom: 20px;
-}
+
+/*                                                                                             First button on indexx page!! map need to be loaded */  
 .kogeMapWillBeHere{
     width: 100%;
     height: 80%;
@@ -277,6 +280,13 @@
     left: 0%;
   
 }
+/*                                                                                                 Now this is the most interesting part */
+/*                                                                                                 i create a function that take arguments */
+/*                                                                                                 based on them it create Pop-up Box  */
+/*                                                                                                 Bellow is the style for it and if u want to change */
+/*                                                                                                 everytime when u use function you need to come here */
+/*                                                                                                 and make class with background img thats all u need */
+/*                                                                                                 To have pop up window */
 .popUpContainer{
     width: 75%;
     height: 40%;

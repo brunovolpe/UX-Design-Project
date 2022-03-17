@@ -1,19 +1,17 @@
-$(document).ready(function(){
-    if(window.location.href == 'http://127.0.0.1:5501/index.html'){
-
- 
-    // Lets put the heading 
+$(document).ready(function(){ //always use JQuerry in this scope!!!!
+    if(window.location.href == 'http://127.0.0.1:5501/index.html'){    // Check what page are the user this i how we can separete the JS 
+                                                                            // Document so functions are not going to be messy!
     $('<div/>',{
         id : 'main',
         class: 'fullContent',
-    }).appendTo('body')
+    }).appendTo('body')       // This is our Background image! You can change image in Style.css
     $('<h1/>',{
         text: 'Come and Experience KØGE',
         class: 'heading',
-    }).appendTo('#main');
+    }).appendTo('#main');       // this is our first heading on mine page 
     $('<div/>',{
         id: 'btnContainer',
-    }).appendTo('.fullContent')
+    }).appendTo('.fullContent') // here i create btn container so i can put buttons inside
     $('<button/>',{
         text: "KØGE's map",
         class: 'btn',
@@ -23,7 +21,9 @@ $(document).ready(function(){
         text: "Personalized map",
         class: 'btn',
         id: 'personalizedMap',
-    }).appendTo('#btnContainer');
+    }).appendTo('#btnContainer');   // i Just append the btn's to the container.
+
+    //Now we create Functions when click on button to send you to the right HTML file 
     $('#personalizedMap').click(function(){
         window.location.href = 'http://127.0.0.1:5501/personalized.html';
     })
@@ -31,17 +31,17 @@ $(document).ready(function(){
         window.location.href = 'http://127.0.0.1:5501/kogeMap.html';
     })
     
-}else if(window.location.href == 'http://127.0.0.1:5501/personalized.html'){
+}else if(window.location.href == 'http://127.0.0.1:5501/personalized.html'){        // checking!!!
     
     
         $('<div/>',{
             class: 'goBackButton',
-        }).appendTo('body');
-        $('body').addClass('fullContent');
+        }).appendTo('body');                                            // create! Back button
+        $('body').addClass('fullContent');                              //put background!
         $('body').append($(document.createElement('div')).prop({
             type: 'div',
             class:'firstSection',
-        }))
+        }))                                                             //container for buttons
         $('.firstSection').append(
             $(document.createElement('button')).prop({
                 type: 'button',
@@ -69,12 +69,12 @@ $(document).ready(function(){
             type:'button',
             innerHTML: 'explore',
             class: 'btn',
-            id: 'explore',
+            id: 'explore',                                                              //Create all button's needed!
         })).append($(document.createElement('h1')).prop({
             type: 'text',
             innerHTML: 'You Feel Like',
             class: 'uFeelLike',
-        }));
+        }));                                                                            //Dont forget about headings
         $('.goBackButton').click(function(){
             window.location.href = 'http://127.0.0.1:5501/index.html';
         })
@@ -93,37 +93,37 @@ $(document).ready(function(){
         $('#explore').click(function(){
             window.location.href = 'http://127.0.0.1:5501/explore.html'
         })
-   
-}else if(window.location.href == 'http://127.0.0.1:5501/kogeMap.html'){
+                                                                                // all function on the page !
+}else if(window.location.href == 'http://127.0.0.1:5501/kogeMap.html'){              //checking
     $('<div/>',{
         class: 'kogeMapWillBeHere',
-    }).appendTo('body');
+    }).appendTo('body');                        // here we need to insert the link for maps!
     $('<div/>',{
         class: 'goBackButton',
-    }).appendTo('body');
+    }).appendTo('body');                    //go back button
     $('<div/>',{
         class: 'iconsMenu',
-    }).appendTo('body');
+    }).appendTo('body');                        //icons menu on bottom
     $('.goBackButton').click(function(){
         window.location.href = 'http://127.0.0.1:5501/index.html';
     })
             
         
-}else if(window.location.href == 'http://127.0.0.1:5501/eatAndDrink.html'){
+}else if(window.location.href == 'http://127.0.0.1:5501/eatAndDrink.html'){             //checking
     $('<div/>',{
         class: 'goBackButton',
-    }).appendTo('body');
+    }).appendTo('body');                                                      //go back button
     $('<div/>',{
         class: 'eatDrinkContent',
-    }).appendTo('body');
+    }).appendTo('body');                                                    //background img
     $('<h1/>',{
         text: 'Food & Drinks',
         class: 'headingForEatAndDrink',
-    }).appendTo('body');
+    }).appendTo('body');                                               //heading
     $('body').append($(document.createElement('div')).prop({
         type: 'div',
         class:'firstSection',
-    }))
+    }))                                                              //container For Buttons
     $('.firstSection').append(
         $(document.createElement('button')).prop({
             type: 'button',
@@ -140,7 +140,7 @@ $(document).ready(function(){
         type: 'button',
         innerHTML: 'restaurant',
         class: 'btn',
-    }));
+    }));                                                             //buttons createed
     $('.goBackButton').click(function(){
         window.location.href = 'http://127.0.0.1:5501/personalized.html';
     })
@@ -148,14 +148,14 @@ $(document).ready(function(){
     $('<div/>',{
         class: 'backgroundActive',
 
-    }).appendTo('body');
+    }).appendTo('body');                                                   //background img
     $('<div/>',{
         class: 'goBackButton',
-    }).appendTo('body');
+    }).appendTo('body');                                                     //go back button
     $('body').append($(document.createElement('div')).prop({
         type: 'div',
         class:'firstSection',
-    }))
+    }))                                                             //container For Buttons
     $('.firstSection').append(
         $(document.createElement('button')).prop({
             type: 'button',
@@ -173,7 +173,7 @@ $(document).ready(function(){
     $('<h1/>',{
         text: 'Active',
         class: 'headingForEatAndDrink',
-    }).appendTo('body');
+    }).appendTo('body');                                                             //buttons createed
     $('#familybtn').click(function(){
         window.location.href = 'http://127.0.0.1:5501/family.html';
     })
@@ -472,49 +472,55 @@ $(document).ready(function(){
     $('.goBackButton').click(function(){
         window.location.href = 'http://127.0.0.1:5501/personalized.html';
     })
+
 }
+
+//Now i am out of JQuerry scope so i can write pure js 
+
 function popUpCreator(h,imgage,adres,link,tel,des,location){
     let popUpContainer = document.createElement('div');
     let heading = document.createElement('h3');
     let img = document.createElement('div');
     let details = document.createElement('div');
-    details.classList.add('details');
     let address = document.createElement('p');
     let linktoWeb = document.createElement('a');
     let number = document.createElement('p');
     let ratingImg = document.createElement('div');
-    heading.innerHTML = h;
-    heading.classList.add('headingPopUp');
-    popUpContainer.appendChild(heading);
-    img.classList.add('imgForPopUp');
-    popUpContainer.appendChild(img)
     let det = document.createElement('p');
-    det.innerHTML = 'Details';
-    details.appendChild(det);
-    address.innerHTML = adres;
-    details.appendChild(address);
-    linktoWeb.innerHTML = link;
-    linktoWeb.setAttribute('href', link);
-    details.appendChild(linktoWeb);
-    number.innerHTML = tel;
-    details.appendChild(number);
-    ratingImg.classList.add('ratingImg');
-    details.appendChild(ratingImg);
-    
-    popUpContainer.appendChild(details);
     let x= document.createElement('h6');
-    x.classList.add('descTag');
-    x.innerHTML = 'Description'
-    popUpContainer.appendChild(x);
-    let description = document.createElement('p');
-    description.innerHTML = des;
-    description.classList.add('description');
+    let description = document.createElement('p');                  // first we create all elements we need! for this function
 
+    heading.innerHTML = h;
+    det.innerHTML = 'Details';
+    address.innerHTML = adres;
+    linktoWeb.innerHTML = link;
+    number.innerHTML = tel;
+    description.innerHTML = des;
+    x.innerHTML = 'Description'                             //then we write HTML inside!
+
+    details.classList.add('details');
+    heading.classList.add('headingPopUp');
+    img.classList.add('imgForPopUp');
+    ratingImg.classList.add('ratingImg');
+    x.classList.add('descTag');
+    description.classList.add('description');
+    popUpContainer.classList.add('popUpContainer')                      // Now we add Style to those elements 
+    
+    linktoWeb.setAttribute('href', link);                               // set attribute if we need!
+
+    popUpContainer.appendChild(heading);
+    popUpContainer.appendChild(img)
+    details.appendChild(det);
+    details.appendChild(address);
+    details.appendChild(linktoWeb);
+    details.appendChild(number);
+    details.appendChild(ratingImg);
+    popUpContainer.appendChild(details);
+    popUpContainer.appendChild(x);
     popUpContainer.appendChild(description);
-    document.body.appendChild(popUpContainer);
-    popUpContainer.classList.add('popUpContainer')
+    document.body.appendChild(popUpContainer);                      //most import to see our elements wee need to append them to the DOM!!
 }
-popUpCreator('Garant Cykler v/ Allan Friis','exploreBackground','Amagerbrogade','www.google.com','+50 32 75 58','loasd sadfasfo nasipjd asofnasjfnaskl dnasklf nka lsnfklasnk lfnasklfnaksl nfklansfk','body')
+//popUpCreator('Garant Cykler v/ Allan Friis','exploreBackground','Amagerbrogade','www.google.com','+50 32 75 58','loasd sadfasfo nasipjd asofnasjfnaskl dnasklf nka lsnfklasnk lfnasklfnaksl nfklansfk','body')
     
 });
 console.log(window.location.href)
