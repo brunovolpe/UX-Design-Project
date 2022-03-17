@@ -286,7 +286,7 @@ $(document).ready(function(){
     }))
     $('<h1/>',{
         text: 'relax',
-        class: 'headingForEatAndDrink',
+        class: 'headingForEatAndDrink relaxHeading',
     }).appendTo('body');
     $('#oneDayTrip').click(function(){
         window.location.href = 'http://127.0.0.1:5501/oneDay.html';
@@ -301,7 +301,10 @@ $(document).ready(function(){
     $('<div/>',{
         class: 'goBackButton',
     }).appendTo('body');
-    $('body').addClass('fullContent');
+    $('<div/>',{
+        class: 'backgroundRelax',
+
+    }).appendTo('body');
     $('body').append($(document.createElement('div')).prop({
         type: 'div',
         class:'firstSection',
@@ -334,8 +337,11 @@ $(document).ready(function(){
         class: 'btn',
     })).append($(document.createElement('h1')).prop({
         type: 'text',
-        innerHTML: 'relax more days',
-        class: 'uFeelLike',
+        innerHTML: 'relax',
+        class: 'relaxHeadingMoreDays',
+    })).append($(document.createElement('h2')).prop({
+        innerHTML:'/more days/',
+        class: 'oneDayTrip',
     }));
     $('.goBackButton').click(function(){
         window.location.href = 'http://127.0.0.1:5501/relax.html';
@@ -344,6 +350,10 @@ $(document).ready(function(){
 }else if(window.location.href == 'http://127.0.0.1:5501/oneDay.html'){
     $('<div/>',{
         class: 'goBackButton',
+    }).appendTo('body');
+
+    $('<div/>',{
+        class: 'backgroundRelax',
     }).appendTo('body');
     $('body').addClass('fullContent');
     $('body').append($(document.createElement('div')).prop({
@@ -370,8 +380,12 @@ $(document).ready(function(){
         id: 'forest',
     })).append($(document.createElement('h1')).prop({
         type: 'text',
-        innerHTML: 'relax for 1day trip',
-        class: 'uFeelLike',
+        innerHTML: 'relax',
+        class: 'relaxHeading1Day',
+    })).append($(document.createElement('h2')).prop({
+        type:'text',
+        innerHTML: '/1 day trip/',
+        class: 'oneDayTrip',
     }));
     $('.goBackButton').click(function(){
         window.location.href = 'http://127.0.0.1:5501/relax.html';
@@ -381,7 +395,7 @@ $(document).ready(function(){
     $('<div/>',{
         class: 'goBackButton',
     }).appendTo('body');
-    $('body').addClass('fullContent');
+    $('body').addClass('backgroundCulture');
     $('body').append($(document.createElement('div')).prop({
         type: 'div',
         class:'firstSection',
@@ -402,7 +416,7 @@ $(document).ready(function(){
     })).append($(document.createElement('h1')).prop({
         type: 'text',
         innerHTML: 'Culture',
-        class: 'uFeelLike',
+        class: 'relaxHeadingMoreDays',
     }));
     $('.goBackButton').click(function(){
         window.location.href = 'http://127.0.0.1:5501/personalized.html';
@@ -411,12 +425,12 @@ $(document).ready(function(){
     $('<div/>',{
         class: 'goBackButton',
     }).appendTo('body');
-    $('body').addClass('fullContent');
+    $('body').addClass('exploreBackground');
     $('body').append($(document.createElement('div')).prop({
         type: 'div',
-        class:'firstSection',
+        class:'firstSectionExplore',
     }))
-    $('.firstSection').append(
+    $('.firstSectionExplore').append(
         $(document.createElement('button')).prop({
             type: 'button',
             innerHTML: 'Treasure hunt for kids',
@@ -453,7 +467,7 @@ $(document).ready(function(){
     })).append($(document.createElement('h1')).prop({
         type: 'text',
         innerHTML: 'explore',
-        class: 'uFeelLike',
+        class: 'exploreHeading',
     }));
     $('.goBackButton').click(function(){
         window.location.href = 'http://127.0.0.1:5501/personalized.html';
