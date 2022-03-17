@@ -1,5 +1,5 @@
 $(document).ready(function(){ //always use JQuerry in this scope!!!!
-    if(window.location.href == 'https://brunovolpe.github.io/UX-Design-Project/?fbclid=IwAR33QHVtWUlK-UvhGlUJ7iHhT3e892Mt4rUjjxhiNXPQYiiflQ9Y4rMYhL0'){    // Check what page are the user this i how we can separete the JS 
+    if(window.location.href == 'http://127.0.0.1:5501/index.html'){    // Check what page are the user this i how we can separete the JS 
                                                                             // Document so functions are not going to be messy!
     $('<div/>',{
         id : 'main',
