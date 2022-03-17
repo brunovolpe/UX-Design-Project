@@ -473,6 +473,48 @@ $(document).ready(function(){
         window.location.href = 'http://127.0.0.1:5501/personalized.html';
     })
 }
+function popUpCreator(h,imgage,adres,link,tel,des,location){
+    let popUpContainer = document.createElement('div');
+    let heading = document.createElement('h3');
+    let img = document.createElement('div');
+    let details = document.createElement('div');
+    details.classList.add('details');
+    let address = document.createElement('p');
+    let linktoWeb = document.createElement('a');
+    let number = document.createElement('p');
+    let ratingImg = document.createElement('div');
+    heading.innerHTML = h;
+    heading.classList.add('headingPopUp');
+    popUpContainer.appendChild(heading);
+    img.classList.add('imgForPopUp');
+    popUpContainer.appendChild(img)
+    let det = document.createElement('p');
+    det.innerHTML = 'Details';
+    details.appendChild(det);
+    address.innerHTML = adres;
+    details.appendChild(address);
+    linktoWeb.innerHTML = link;
+    linktoWeb.setAttribute('href', link);
+    details.appendChild(linktoWeb);
+    number.innerHTML = tel;
+    details.appendChild(number);
+    ratingImg.classList.add('ratingImg');
+    details.appendChild(ratingImg);
+    
+    popUpContainer.appendChild(details);
+    let x= document.createElement('h6');
+    x.classList.add('descTag');
+    x.innerHTML = 'Description'
+    popUpContainer.appendChild(x);
+    let description = document.createElement('p');
+    description.innerHTML = des;
+    description.classList.add('description');
+
+    popUpContainer.appendChild(description);
+    document.body.appendChild(popUpContainer);
+    popUpContainer.classList.add('popUpContainer')
+}
+popUpCreator('Garant Cykler v/ Allan Friis','exploreBackground','Amagerbrogade','www.google.com','+50 32 75 58','loasd sadfasfo nasipjd asofnasjfnaskl dnasklf nka lsnfklasnk lfnasklfnaksl nfklansfk','body')
     
 });
 console.log(window.location.href)

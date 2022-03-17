@@ -277,3 +277,67 @@
     left: 0%;
   
 }
+.popUpContainer{
+    width: 75%;
+    height: 40%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: #00BF6F;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    padding: 10px;
+
+}
+.headingPopUp{
+    text-align: center;
+    color: #FAFAFA;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+}
+.details{
+    width: 50%;
+}
+.ratingImg{
+    
+    background-image: url(./Images/5-star-rating-icon-eps10-star-vector-21638973.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 50%;
+    height: 16%;
+}
+.imgForPopUp{
+    background-image: url(./Images/bicycle-koge.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 45%;
+    
+    height: 40%;
+}
+.details{
+    width: 50%;
+    position: absolute;
+    bottom: 0px;
+    top: 22em;
+    font-size: 0.5em;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+}
+.description{
+    width: 45%;
+    position: absolute;
+    right: 3%;
+    text-align: center;
+    top: 40%;
+    padding-left: 10px;
+}
+.descTag{
+    position: absolute;
+    right: 22%;
+    top: 28%;
+}
