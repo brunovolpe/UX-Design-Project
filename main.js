@@ -1,6 +1,5 @@
 $(document).ready(function(){ //always use JQuerry in this scope!!!!
-    if(window.location.href == 'http://127.0.0.1:5501/index.html'){    // Check what page are the user this i how we can separete the JS 
-                                                                            // Document so functions are not going to be messy!
+    if(window.location.pathname == '/index.html'){    // Check what page are the user this i how we can separete the JS                                                     // Document so functions are not going to be messy!
     $('<div/>',{
         id : 'main',
         class: 'fullContent',
@@ -76,7 +75,7 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
             class: 'uFeelLike',
         }));                                                                            //Dont forget about headings
         $('.goBackButton').click(function(){
-            window.location.href = 'http://127.0.0.1:5501/index.html';
+            window.location.pathname = '/index.html';
         })
         $('#eatDrink').click(function(){
             window.location.href = 'http://127.0.0.1:5501/eatAndDrink.html'
@@ -524,3 +523,38 @@ function popUpCreator(h,imgage,adres,link,tel,des,location){
     
 });
 console.log(window.location.href)
+window.onload = function(){
+    let router = function(name, routes  ){
+        return{
+            name,
+            routes  ,
+        }
+    }
+    let view = document.getElementById('view');
+    let myFirstRouter = new router('myFirstRouter',[
+        {
+            path: '/',
+            name: 'Root',
+        },
+        {
+            path: '/about',
+            name: 'About',
+        },
+        {
+            path: '/contact',
+            name: 'Contact',
+        }
+    ]);
+    
+    let currentPath = window.location.pathname;
+    console.log(currentPath)
+    if(currentPath === '/index.html'){
+      // view.innerHTML = 'You are on the root page';
+    }else{
+        let route = myFirstRouter.routes.filter(function(r){
+            return r.path === currentPath
+        })[0];   
+        console.log(route)                                
+    }
+
+}
