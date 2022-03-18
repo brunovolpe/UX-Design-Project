@@ -1,5 +1,6 @@
 $(document).ready(function(){ //always use JQuerry in this scope!!!!
-    if(window.location.pathname == '/index.html'){    // Check what page are the user this i how we can separete the JS                                                     // Document so functions are not going to be messy!
+    if(window.location.pathname == '/index.html'){    // Check what page are the user this i how we can separete the JS 
+                                                                            // Document so functions are not going to be messy!
     $('<div/>',{
         id : 'main',
         class: 'fullContent',
@@ -24,13 +25,13 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
 
     //Now we create Functions when click on button to send you to the right HTML file 
     $('#personalizedMap').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/personalized.html';
+        window.location.pathname = '/personalized.html';
     })
     $("#kogeMap").click(function(){
-        window.location.href = 'http://127.0.0.1:5501/kogeMap.html';
+        window.location.pathname = '/kogeMap.html';
     })
     
-}else if(window.location.href == 'http://127.0.0.1:5501/personalized.html'){        // checking!!!
+}else if(window.location.pathname == '/personalized.html'){        // checking!!!
     
     
         $('<div/>',{
@@ -78,22 +79,22 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
             window.location.pathname = '/index.html';
         })
         $('#eatDrink').click(function(){
-            window.location.href = 'http://127.0.0.1:5501/eatAndDrink.html'
+            window.location.pathname = '/eatAndDrink.html'
         })
         $('#active').click(function(){
-            window.location.href = 'http://127.0.0.1:5501/active.html';
+            window.location.pathname = '/active.html';
         })
         $('#relax').click(function(){
-            window.location.href = 'http://127.0.0.1:5501/relax.html'
+            window.location.pathname = '/relax.html'
         })
         $('#culture').click(function(){
-            window.location.href = 'http://127.0.0.1:5501/culture.html'
+            window.location.pathname = '/culture.html'
         })
         $('#explore').click(function(){
-            window.location.href = 'http://127.0.0.1:5501/explore.html'
+            window.location.pathname = '/explore.html'
         })
                                                                                 // all function on the page !
-}else if(window.location.href == 'http://127.0.0.1:5501/kogeMap.html'){              //checking
+}else if(window.location.pathname == '/kogeMap.html'){              //checking
     $('<div/>',{
         class: 'kogeMapWillBeHere',
     }).appendTo('body');                        // here we need to insert the link for maps!
@@ -104,11 +105,11 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'iconsMenu',
     }).appendTo('body');                        //icons menu on bottom
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/index.html';
+        window.location.pathname = '/index.html';
     })
             
         
-}else if(window.location.href == 'http://127.0.0.1:5501/eatAndDrink.html'){             //checking
+}else if(window.location.pathname == '/eatAndDrink.html'){             //checking
     $('<div/>',{
         class: 'goBackButton',
     }).appendTo('body');                                                      //go back button
@@ -141,9 +142,9 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'btn',
     }));                                                             //buttons createed
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/personalized.html';
+        window.location.pathname = '/personalized.html';
     })
-}else if(window.location.href == 'http://127.0.0.1:5501/active.html'){
+}else if(window.location.pathname == '/active.html'){
     $('<div/>',{
         class: 'backgroundActive',
 
@@ -174,15 +175,15 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'headingForEatAndDrink',
     }).appendTo('body');                                                             //buttons createed
     $('#familybtn').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/family.html';
+        window.location.pathname = '/family.html';
     })
     $('#adultsbtn').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/adults.html';
+        window.location.pathname = '/adults.html';
     })
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/personalized.html';
+        window.location.pathname = '/personalized.html';
     })
-}else if(window.location.href == 'http://127.0.0.1:5501/family.html'){
+}else if(window.location.pathname == '/family.html'){
     $('<div/>',{
         class: 'backgroundFamily',
 
@@ -212,15 +213,15 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'headingForEatAndDrink',
     }).appendTo('body');
     $('#indoorbtn').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/familyIndoor.html';
+        window.location.pathname = '/familyIndoor.html';
     })
     $('#outdoorbtn').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/familyOutdoor.html';
+        window.location.pathname = '/familyOutdoor.html';
     })
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/active.html';
+        window.location.pathname = '/active.html';
     })
-}else if(window.location.href == 'http://127.0.0.1:5501/adults.html'){
+}else if(window.location.pathname == '/adults.html'){
     $('<div/>',{
         class: 'backgroundAdults',
 
@@ -250,15 +251,15 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'headingForEatAndDrink',
     }).appendTo('body');
     $('#adultIndoor').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/adultIndoor.html';
+        window.location.pathname = '/adultIndoor.html';
     })
     $('#outdoorAdults').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/adultOutdoor.html';
+        window.location.pathname = '/adultOutdoor.html';
     })
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/active.html';
+        window.location.pathname = '/active.html';
     })
-}else if(window.location.href == 'http://127.0.0.1:5501/relax.html'){
+}else if(window.location.pathname == '/relax.html'){
     $('<div/>',{
         class: 'backgroundRelax',
 
@@ -288,15 +289,15 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'headingForEatAndDrink relaxHeading',
     }).appendTo('body');
     $('#oneDayTrip').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/oneDay.html';
+        window.location.pathname = '/oneDay.html';
     })
     $('#moreDays').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/moreDays.html';
+        window.location.pathname = '/moreDays.html';
     })
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/personalized.html';
+        window.location.pathname = '/personalized.html';
     })
-}else if(window.location.href == 'http://127.0.0.1:5501/moreDays.html'){
+}else if(window.location.pathname == '/moreDays.html'){
     $('<div/>',{
         class: 'goBackButton',
     }).appendTo('body');
@@ -343,10 +344,10 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'oneDayTrip',
     }));
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/relax.html';
+        window.location.pathname = '/relax.html';
     })
    
-}else if(window.location.href == 'http://127.0.0.1:5501/oneDay.html'){
+}else if(window.location.pathname == '/oneDay.html'){
     $('<div/>',{
         class: 'goBackButton',
     }).appendTo('body');
@@ -387,10 +388,10 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'oneDayTrip',
     }));
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/relax.html';
+        window.location.pathname = '/relax.html';
     })
    
-}else if(window.location.href == 'http://127.0.0.1:5501/culture.html'){
+}else if(window.location.pathname == '/culture.html'){
     $('<div/>',{
         class: 'goBackButton',
     }).appendTo('body');
@@ -418,9 +419,9 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'relaxHeadingMoreDays',
     }));
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/personalized.html';
+        window.location.pathname = '/personalized.html';
     })
-}else if(window.location.href == 'http://127.0.0.1:5501/explore.html'){
+}else if(window.location.pathname == '/explore.html'){
     $('<div/>',{
         class: 'goBackButton',
     }).appendTo('body');
@@ -469,7 +470,7 @@ $(document).ready(function(){ //always use JQuerry in this scope!!!!
         class: 'exploreHeading',
     }));
     $('.goBackButton').click(function(){
-        window.location.href = 'http://127.0.0.1:5501/personalized.html';
+        window.location.pathname = '/personalized.html';
     })
 
 }
@@ -523,38 +524,3 @@ function popUpCreator(h,imgage,adres,link,tel,des,location){
     
 });
 console.log(window.location.href)
-window.onload = function(){
-    let router = function(name, routes  ){
-        return{
-            name,
-            routes  ,
-        }
-    }
-    let view = document.getElementById('view');
-    let myFirstRouter = new router('myFirstRouter',[
-        {
-            path: '/',
-            name: 'Root',
-        },
-        {
-            path: '/about',
-            name: 'About',
-        },
-        {
-            path: '/contact',
-            name: 'Contact',
-        }
-    ]);
-    
-    let currentPath = window.location.pathname;
-    console.log(currentPath)
-    if(currentPath === '/index.html'){
-      // view.innerHTML = 'You are on the root page';
-    }else{
-        let route = myFirstRouter.routes.filter(function(r){
-            return r.path === currentPath
-        })[0];   
-        console.log(route)                                
-    }
-
-}
