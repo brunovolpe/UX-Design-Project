@@ -319,43 +319,185 @@
     width: 60px;
     height: 60px;
 }
-.iconContainer1{
+.iconContainer111{
     position: absolute;
     top: 30%;
     left: 40%;
     width: 60px;
     height: 60px;
 }
-.iconContainer2{
+.iconContainer112{
     position: absolute;
     top: 35%;
     left: 35%;
     width: 60px;
     height: 60px;
 }
-.iconContainer3{
+.iconContainer113{
     position: absolute;
     top: 42%;
     left: 45%;
     width: 60px;
     height: 60px;
 }
-.iconContainer4{
+.iconContainer114{
     position: absolute;
     top: 45%;
     left: 49%;
     width: 60px;
     height: 60px;
 }
-.iconContainer5{
+.iconContainer115{
     position: absolute;
     top: 50%;
     left: 50%;
     width: 60px;
     height: 60px;
 }
+.iconContainer220{
+    top: 15%;
+    left: 55%;
+}
+.iconContainer221{
+    top: 28%;
+    left: 60%;
+}
+.iconContainer222{
+    top: 30%;
+    left: 40%;
+}
+.iconContainer223{
+    top: 40%;
+    left: 65%;
+}
+.iconContainer224{
+    top: 45%;
+    left: 45%;
+}
+.iconContainer225{
+    top: 50%;
+    left: 25%;
+}
+.iconContainer330{
+    top: 10%;
+    left: 65%;
+}
+.iconContainer331{
+    top: 15%;
+    left: 62.5%;
+}
+.iconContainer332{
+    top: 18.5%;
+    left: 65%;
+}
+.iconContainer333{
+    top: 45%;
+    left: 65%;
+}
+.iconContainer334{
+    top: 38%;
+    left: 62.5%;
+}
+.iconContainer440{
+    top: 45%;
+    left: 45%;
+}
+.iconContainer770{
+    top:30%;
+    left: 55%;
+}
+.iconContainer771{
+    top:33%;
+    left: 45%;
+}
+.iconContainer772{
+    top:38%;
+    left: 50%;
+}
+.iconContainer773{
+    top:35%;
+    left: 40%;
+}
+.iconContainer774{
+    top:45%;
+    left: 35%;
+}
+.iconContainer775{
+    top:45%;
+    left: 55%;
+}
+.iconContainer880{
+    top:30%;
+    left: 22%;
+}
+.iconContainer881{
+    top:33%;
+    left: 55%;
+}
+.iconContainer882{
+    top:45%;
+    left: 60%;
+}
+
 .iconBed{
     background-image: url(./Images/icons/icons/accomodation.png);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.iconDrink{
+    background-image: url(./Images/icons/icons/food-copy.png);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.iconShip{
+    background-image: url(./Images/icons/icons/harbour.png);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.iconCulture{
+    background-image: url(./Images/icons/icons/museum-copy.png);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.iconHistory{
+    background-image: url(./Images/icons/icons/history-copy.png);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.iconIndoor{
+    background-image: url(./Images/icons/icons/indoor.png);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
+.iconOutDoor{
+    background-image: url(./Images/icons/icons/outdoor.png);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.iconShopping{
+    background-image: url(./Images/icons/icons/shopping-copy.png);
     background-position:center ;
     background-size:cover;
     background-repeat: no-repeat;
@@ -366,4 +508,73 @@
     position: absolute;
     left: 45%;
     top: 5%;
+}
+.secBed{
+    position: absolute;
+    left: 0;
+}
+.tirthBed{
+    position: absolute;
+    left: 45%;
+    top: 5%;
+}
+.fourthBed{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+.fifthBed{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.sixBed{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.firstShip{
+    position: absolute;
+    top: 16%;
+    left: 35%;
+}
+.secShip{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.tirthShip{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+.forthShip{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+.fiveShip{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.imgFirstBed{
+    background-image: url(./Images/active.jpg);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.firstOutdoor{
+
+}
+.secondOutdoor{
+    top: 1%;
+    left: 45%;
+}
+.tirthOutdoor{
+    top: 40%;
+    left: 5%;
 }
