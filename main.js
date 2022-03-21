@@ -324,6 +324,7 @@ function outdoorClick(){
                 popUpCreator('Køge Kano og Kajak Klub','imgFirstBed','Søndre Molevej 20, Køge','www.koegekajak.dk','+45 56 63 42 52','4.7',' ')
                 popUpClasses[0].classList.add('secondOutdoor')
 
+
             }else{
                 for(let i = popUpClasses.length ; i>0; i--){
                     popUpClasses[i-1].remove();
@@ -445,4 +446,23 @@ function shoppingCreater(counter){
     imgContainer.appendChild(img);
     document.body.appendChild(imgContainer)
     return;
+}
+
+function openOutdoorFamily(x,back){
+
+    let body = document.getElementsByClassName(x);
+     if(body.length == 1){
+        let map = document.createElement('div');
+        map.innerHTML = '<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1uFql9oem4WKLlLuFQp0_9nXclBpbsLIA&ehbc=2E312F" width="100%" height="100%"></iframe>';
+        map.classList.add('mapOutdoor');
+        body[0].appendChild(map)
+        let goBack = document.createElement('div');
+        goBack.innerHTML = '<a href='+ back+' class="goBackButton"></a>';
+        body[0].appendChild(goBack);
+     }else{
+        for(let i =body.length; i>0; i--){
+            imgOn[i-1].remove();
+        }
+     }
+  
 }

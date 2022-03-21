@@ -150,6 +150,7 @@
 .headingExplore{
     font-size: 4em;
     top: 2.3em;
+    right: 5%;
 }
 .moreDays{
     position: relative;
@@ -231,16 +232,18 @@
 .kogeMapWillBeHere{
     width: 100%;
     height: 80%;
-    background-color: slategray;
+    background-image: url(./Images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     top: 0%;
 }
 .iconsMenu{
-    width: 80%;
+    width: 260px;
     height: 20%;
     position: absolute;
     bottom: 0%;
-    left: 15%;
+    left: 20%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -578,4 +581,11 @@
 .tirthOutdoor{
     top: 40%;
     left: 5%;
+}
+.mapOutdoor{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
 }
