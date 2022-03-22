@@ -100,7 +100,7 @@
     margin: 20px
 }
 .fullContent{
-    background-image:url('/Images/bicycle-koge.jpg');
+    background-image:url(./Images/bicycle-koge.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
