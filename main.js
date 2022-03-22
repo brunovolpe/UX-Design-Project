@@ -194,6 +194,19 @@ function shoppingClick(){
         shoppingCreater('773');
         shoppingCreater('774');
         shoppingCreater('775');
+
+        imgOn[0].addEventListener('click', function(){
+            
+            if(popUpClasses.length < 1){
+                popUpCreator('Straedet Køge','ShoppingOne','Ølbycenter 104, 4600 Køge','www.straedetkoge.dk','+45 50 93 86 27','4.8',' ');
+                popUpClasses[0].classList.add('firstShopping');
+
+            }else{
+                for(let i = popUpClasses.length ; i>0; i--){
+                    popUpClasses[i-1].remove();
+                }
+            }
+        })
         
     }else{
         for(let i =imgOn.length; i>0; i--){
