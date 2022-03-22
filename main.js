@@ -166,6 +166,18 @@ function EatDrinkClick(){
         drinksCreater('224');
         drinksCreater('225');
 
+        imgOn[0].addEventListener('click', function(){
+            
+            if(popUpClasses.length < 1){
+                popUpCreator('Stacys Diner Køge','restaurantOne','Bådehavnen 1, 4600 Køge','www.stacysdiner.dk','+45 31 32 32 12','4.5',' ');
+                popUpClasses[0].classList.add('firstRestaurant');
+
+            }else{
+                for(let i = popUpClasses.length ; i>0; i--){
+                    popUpClasses[i-1].remove();
+                }
+            }
+        })
     }else{
         for(let i =imgOn.length; i>0; i--){
             imgOn[i-1].remove();

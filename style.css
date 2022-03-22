@@ -253,6 +253,15 @@
     width: 65px;
     height: 65px;
 }
+.restaurantOne{
+    background-image: url(./Images/Stacys1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+}
 /*                                                                                                 Now this is the most interesting part */
 /*                                                                                                 i create a function that take arguments */
 /*                                                                                                 based on them it create Pop-up Box  */
@@ -582,6 +591,12 @@
     top: 40%;
     left: 5%;
 }
+.firstRestaurant{
+    position: absolute;
+    top:5%;
+    left:5%;
+}
+
 .mapOutdoor{
     position: absolute;
     top: 0%;
