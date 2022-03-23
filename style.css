@@ -12,11 +12,11 @@
 
 /*                                                                                           we start making btn     and arrows   */
 .btn{
-    width: 90%;
+    width: 80%;
     background-color: var(--main-color);
     color: var(--font-color);
-    font-size: 1.0em;
-    font-weight: 550;
+    font-size: 15px;
+    font-weight: bold;
     border: 1px solid var(--main-color);
     border-radius: 4px;
     box-shadow:rgba(0,0,0, .1) 0 2px 4px 0;
@@ -28,6 +28,7 @@
     text-transform: uppercase;
     padding: 15px 25px;
     text-align: center;
+    height: 48px;
 }
 .btnE{
     width: 318px;
@@ -38,19 +39,19 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 23px;
     position: absolute;
-    top: 29.0em;
+    top: 28.0em;
 }
 .personBtn{
+    margin-top: 46px;
     top: 18em;
-    gap: 20px;
 }
 .btnExplore{
     position: absolute;
     top: 14em;
     width: 90%;
-    left: 5%;
+    left: 6%;
     gap: 15px;
 }
 .btnFamily{
@@ -61,7 +62,7 @@
 }
 .btnRelax{
     position: absolute;
-    top: 18em;
+    top: 50%;
 }
 .arrowContainer{
     position: absolute;
@@ -100,12 +101,12 @@
     margin: 20px
 }
 .fullContent{
-    background-image:url(./Images/bicycle-koge.jpg);
+    background-image:url(./Images/bike-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: -60px;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .firstSection{
     display: flex;
@@ -118,44 +119,59 @@
 
 .heading{
     color: #FAFAFA;
-    font-size: 2.5em;
+    font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     position: relative;
-    top: 2.9em;
+    top: 2.2em;
     left: 15%;
-    width: 70%;
+    width: 338px;
+    height: 175px;
+    
+}
+.headingCulture{
+    width: 100%;
+    left: 0px;
+}
+.headingRelax{
+    font-size: 60px;
+    left: 10%;
+    margin-bottom: 10px;
 }
 /*                                                                                                  personalized.html */
 .personHead{
     position: absolute;
-    left: 30%;
-    width: 40%;
+    left: 2.5em;
+    width: 179px;
     text-align: center;
     align-items: center;
     font-weight: bolder;
 }
 .eatDrinkHeading{
-    width: 59%;
+    width: 208px;
     left: 25%;
-    font-size: 4em;
+    font-size: 60px;
+}
+.headingIndex{
+    left: 10%;
 }
 .familyHeading{
     position: absolute;
-    top: 3.9em;
+    top: 2.39em;
     left: 10%;
-    font-size: 3.2em;
+    font-size: 60px;
 }
 .headingExplore{
-    font-size: 4em;
+    font-size: 60px;
     top: 2.3em;
-    right: 5%;
+    left: 11%;
 }
 .moreDays{
     position: relative;
-    top: 24%;
-    font-size: 1.5em;
+    top: 10px;
+    font-size: 30px;
+    left: 10%;
 }
 
 /*                                                                                                  eatAndDrink.html */
@@ -174,7 +190,7 @@
     background-image: url(./Images/active.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -220px;
+    background-position: -240px;
     height: 100vh;
     width: 100wh;
 }
@@ -192,7 +208,7 @@
     background-image: url(./Images/adults.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -250px;
+    background-position: -290px;
     height: 100vh;
     width: 100wh;
 }
@@ -234,6 +250,7 @@
     height: 80%;
     background-image: url(./Images/map.jpg);
     background-repeat: no-repeat;
+    background-position: right;
     background-size: cover;
     position: absolute;
     top: 0%;
@@ -253,24 +270,7 @@
     width: 65px;
     height: 65px;
 }
-.restaurantOne{
-    background-image: url(./Images/Stacys1.jpg);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    
-}
 
-.shoppingOne{
-    background-image: url(./Images/shoppingOne.jpg);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-}
 /*                                                                                                 Now this is the most interesting part */
 /*                                                                                                 i create a function that take arguments */
 /*                                                                                                 based on them it create Pop-up Box  */
@@ -377,76 +377,105 @@
     height: 60px;
 }
 .iconContainer220{
-    top: 15%;
-    left: 55%;
+    top: 29%;
+    left: 49%;
 }
 .iconContainer221{
-    top: 28%;
-    left: 60%;
+    top: 31%;
+    left: 44%;
 }
 .iconContainer222{
-    top: 30%;
-    left: 40%;
+    top: 28%;
+    left: 32%;
 }
 .iconContainer223{
-    top: 40%;
-    left: 65%;
+    top: 34%;
+    left: 35%;
 }
 .iconContainer224{
-    top: 45%;
+    top: 39%;
     left: 45%;
 }
 .iconContainer225{
-    top: 50%;
+    top: 39%;
     left: 25%;
 }
 .iconContainer330{
-    top: 10%;
-    left: 65%;
+    top: 15%;
+    left: 49.5%;
+    
 }
 .iconContainer331{
-    top: 15%;
-    left: 62.5%;
+    top: 10%;
+    left: 52%;
 }
 .iconContainer332{
-    top: 18.5%;
-    left: 65%;
+    top: 23.5%;
+    left: 51%;
 }
 .iconContainer333{
     top: 45%;
-    left: 65%;
+    left: 53%;
 }
 .iconContainer334{
     top: 38%;
-    left: 62.5%;
+    left: 50.5%;
 }
 .iconContainer440{
-    top: 45%;
-    left: 45%;
+    top: 18%;
+    left: 35%;
+}
+.iconContainer441{
+    top: 30%;
+    left: 34%;
+}
+.iconContainer442{
+    top: 53%;
+    left: 19%;
+}
+.iconContainer550{
+    top: 33%;
+    left: 33%;
+}
+.iconContainer660{
+    top: 23%;
+    left: 43%;
+}
+.iconContainer661{
+    top: 32%;
+    left: 43%;
+}
+.iconContainer662{
+    top: 30%;
+    left: 29%;
 }
 .iconContainer770{
     top:30%;
-    left: 55%;
+    left: 50%;
 }
 .iconContainer771{
     top:33%;
-    left: 45%;
+    left: 42%;
 }
 .iconContainer772{
-    top:38%;
-    left: 50%;
+    top:37%;
+    left: 45%;
 }
 .iconContainer773{
-    top:35%;
-    left: 40%;
+    top:37%;
+    left: 35%;
 }
 .iconContainer774{
-    top:45%;
-    left: 35%;
+    top:46%;
+    left: 33%;
 }
 .iconContainer775{
     top:45%;
-    left: 55%;
+    left: 48%;
+}
+.iconContainer776{
+    top: 42%;
+    left: 40%;
 }
 .iconContainer880{
     top:30%;
@@ -454,11 +483,11 @@
 }
 .iconContainer881{
     top:33%;
-    left: 55%;
+    left: 50%;
 }
 .iconContainer882{
     top:45%;
-    left: 60%;
+    left: 55%;
 }
 
 .iconBed{
@@ -470,7 +499,7 @@
     height: 100%;
 }
 .iconDrink{
-    background-image: url(./Images/icons/icons/food-copy.png);
+    background-image: url(./Images/icons/icons/food_drinks.png);
     background-position:center ;
     background-size:cover;
     background-repeat: no-repeat;
@@ -526,6 +555,9 @@
     width: 100%;
     height: 100%;
 }
+.greenColor{
+    border-width: 3px;
+}
 .firstBed{
     position: absolute;
     left: 45%;
@@ -557,9 +589,10 @@
 }
 .firstShip{
     position: absolute;
-    top: 16%;
-    left: 35%;
+    top: 18%;
+    left: 5%;
 }
+
 .secShip{
     position: absolute;
     top: 15%;
@@ -567,22 +600,133 @@
 }
 .tirthShip{
     position: absolute;
-    top: 5%;
-    left: 15%;
+    top: 28%;
+    left: 5%;
 }
 .forthShip{
     position: absolute;
-    top: 35%;
-    left: 15%;
+    top: 48%;
+    left: 7%;
 }
 .fiveShip{
     position: absolute;
     top: 35%;
+    left: 5%;
+}
+.fistIndoor{
+    position: absolute;
+    top: 30%;
     left: 10%;
 }
-.imgFirstBed{
-    background-image: url(./Images/active.jpg);
+.secondIndoor{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.thirthIndoor{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.thirthIndoorImg{
+    background-image: url(./Images/braetspilscafe.jpg);
     background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.fiveShipImg{
+    background-image: url(./Images/summerHuse.jpg);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.forthShipImg{
+    background-image: url(./Images/sondreStrand.jpg);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.tirthShipImg{
+    background-image: url(./Images/kogeMarina.jpg);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.firstShipImg{
+    background-image: url(./Images/fishing.JPG);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.SecShipImg{
+    background-image: url(./Images/summerlandKoge.jpg);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.imgFirstBed{
+    background-image: url(./Images/Danhostel.jpg);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.imgSecBed{
+    background-image: url(./Images/anneHostel.jpg);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.imgTirthBed{
+    background-image: url(./Images/centralHotellet.jpg);
+    background-position:center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.imgFourBed{
+    background-image: url(./Images/NielsHotel.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.imgFiveBed{
+    background-image: url(./Images/cornHotel.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.imgSixBed{
+    background-image: url(./Images/kogeVilla.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -602,8 +746,235 @@
 }
 .firstRestaurant{
     position: absolute;
-    top:5%;
-    left:5%;
+    top:8%;
+    left:4%;
+}
+.secRestaurant{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+.tirthRestaurant{
+    position: absolute;
+    top: 35%;
+    left: 4%;
+}
+.fourRestaurant{
+    position: absolute;
+    top: 41%;
+    left: 4%;
+}
+.fiveRestaurant{
+    position: absolute;
+    top: 9%;
+    left: 10%;
+}
+.sixRestaurant{
+    position: absolute;
+    top: 9%;
+    left: 10%;
+}
+.fisrtCulture{
+    position: absolute;
+    top: 28%;
+    left: 15%;
+}
+.secondCulture{
+    position: absolute;
+    top: 39%;
+    left: 15%;
+}
+.firstHistory{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 33%;
+    height: 30%;
+}
+.secondHistory{
+    position: absolute;
+    top: 2%;
+    left: 35%;
+    width: 33%;
+    height: 30%;
+}
+.thirthHistory{
+    position: absolute;
+    top: 2%;
+    left: 65%;
+    width: 33%;
+    height: 30%;
+}
+.fourthHistory{
+    position: absolute;
+    top: 49%;
+    left: 66%;
+    width: 33%;
+    height: 30%;
+}
+.fiveHistory{
+    position: absolute;
+    top: 49%;
+    left: 2%;
+    width: 33%;
+    height: 30%;
+}
+.sixHistory{
+    width: 33%;
+    height: 30%;
+    position: absolute;
+    top: 49%;
+    left: 34%;
+    
+}
+.sixthHistoryImg{
+    background-image: url(./Images/nordiskFilm.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    
+}
+.fifthHistoryImg{
+    background-image: url(./Images/kogeChurch.webp);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+  
+}
+.fourthHistoryImg{
+    background-image: url(./Images/fafla.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    
+}
+.thirthHistoryImg{
+    background-image: url(./Images/galerri.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    
+}
+.secondHistoryImg{
+    background-image: url(./Images/kogeMuseum.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    
+}
+.firstHistoryImg{
+    background-image: url(./Images/KoS_Museum.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+}
+.thirthCulture{
+    position: absolute;
+    top: 25%;
+    left: 32%;
+}
+.thirthtCultureImg{
+    background-image: url(./Images/riddlehouse.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.secondCultureImg{
+    background-image: url(./Images/veteranImg.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.fisrtCultureImg{
+    background-image: url(./Images/Køge-Festuge-2018-1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.restaurantSix{
+    background-image: url(./Images/kaffe-kaelderen.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.restaurantFive{
+    background-image: url(./Images/braunstain.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.restaurantFour{
+    background-image: url(./Images/oldIrish.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.restaurantThree{
+    background-image: url(./Images/freddo.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.restaurantOne{
+    background-image: url(./Images/Stacys1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.restaurantTwo{
+    background-image: url(./Images/bossa.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.shoppingOne{
+    background-image: url(./Images/shoppingOne.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
 }
 .firstShopping{
     position: absolute;
