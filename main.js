@@ -59,9 +59,9 @@ function bedClick(){
 
     let body = document.getElementsByTagName('body');
     //bedCreater();
-    let icons = document.getElementsByClassName('iconsMenu');
+    let bed = document.getElementsByClassName('iconBed');
     let imgOn = document.getElementsByClassName('iconContainer');
-
+    console.log(imgOn)
 
     if(imgOn.length < 1){
         let popUpClasses = document.getElementsByClassName('popUpContainer');
@@ -86,7 +86,7 @@ function bedClick(){
         imgOn[1].addEventListener('click', function(){
             
             if(popUpClasses.length < 1){
-                popUpCreator("Annette's Annex",'imgSecBed','Pedersvej 22, 4600 Køge','www.visitkoege.dk','+45 60 84 14 30','4.6','AIRBNB')
+                popUpCreator("Annette's Annex",'imgForPopUp','Pedersvej 22, 4600 Køge','www.visitkoege.dk','+45 60 84 14 30','4.6','AIRBNB')
                 popUpClasses[0].classList.add('secBed')
 
             }else{
@@ -98,7 +98,7 @@ function bedClick(){
         imgOn[2].addEventListener('click', function(){
             
             if(popUpClasses.length < 1){
-                popUpCreator('Centralhotellet','imgTirthBed','Vestergade 3, 4600 Køge','www.centralhotellet.dk','+45 56 65 06 96','4.2',' ');
+                popUpCreator('Centralhotellet','imgForPopUp','Vestergade 3, 4600 Køge','www.centralhotellet.dk','+45 56 65 06 96','4.2',' ');
                 popUpClasses[0].classList.add('tirthBed');
 
             }else{
@@ -110,7 +110,7 @@ function bedClick(){
         imgOn[3].addEventListener('click', function(){
             
             if(popUpClasses.length < 1){
-                popUpCreator('Hotel Niels Juel','imgFourBed','Toldbodvej 20, 4600 Køge','www.hotelnielsjuel.dk','+45 56 63 18 00','3.7',' ');
+                popUpCreator('Hotel Niels Juel','imgForPopUp','Toldbodvej 20, 4600 Køge','www.hotelnielsjuel.dk','+45 56 63 18 00','3.7',' ');
                 popUpClasses[0].classList.add('fourthBed');
 
             }else{
@@ -122,7 +122,7 @@ function bedClick(){
         imgOn[4].addEventListener('click', function(){
             
             if(popUpClasses.length < 1){
-                popUpCreator('Comwell Køge Strand','imgFiveBed','Strandvejen 111, 4600 Køge','www.comwell.com','+45 56 65 36 90','4.1',' ')
+                popUpCreator('Comwell Køge Strand','imgForPopUp','Strandvejen 111, 4600 Køge','www.comwell.com','+45 56 65 36 90','4.1',' ')
                 popUpClasses[0].classList.add('fifthBed')
 
             }else{
@@ -134,7 +134,7 @@ function bedClick(){
         imgOn[5].addEventListener('click', function(){
             
             if(popUpClasses.length < 1){
-                popUpCreator('Vallo Camping','imgSixBed','Strandvejen 102, 4600 Køge','www.valloevamping.dk','+45 56 65 28 51','3.9',' ')
+                popUpCreator('Vallo Camping','imgForPopUp','Strandvejen 102, 4600 Køge','www.valloevamping.dk','+45 56 65 28 51','3.9',' ')
                 popUpClasses[0].classList.add('sixBed')
 
             }else{
@@ -166,78 +166,6 @@ function EatDrinkClick(){
         drinksCreater('224');
         drinksCreater('225');
 
-        imgOn[0].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Stacys Diner Køge','restaurantOne','Bådehavnen 1, 4600 Køge','www.stacysdiner.dk','+45 31 32 32 12','4.5',' ');
-                popUpClasses[0].classList.add('firstRestaurant');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
-        imgOn[1].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Bossa Nova','restaurantTwo','Havnen 33, 4600 Køge','www.bossa-nova.nu','+45 51 70 46 33','4.6',' ');
-                popUpClasses[0].classList.add('secRestaurant');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
-        imgOn[2].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Gelateria Caffee Freddo','restaurantThree','Norregade 8B, 4600 Køge','www.freddo.dk','+45 52 11 25 26','5',' ');
-                popUpClasses[0].classList.add('tirthRestaurant');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
-        imgOn[3].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('The Old Irish Pub','restaurantFour','Havnen 31, 4600 Køge','www.oldirishpub.dk','+45 42 95 62 32','3.7',' ');
-                popUpClasses[0].classList.add('fourRestaurant');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
-        imgOn[4].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Braunstain','restaurantFive','Havnen 33, 4600 Køge','www.bossa-nova.nu','+45 51 70 46 33','3.7',' ');
-                popUpClasses[0].classList.add('fiveRestaurant');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
-        imgOn[5].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator("Kie's Kaffekælder",'restaurantSix','Brogade 26, 4600 Køge','www.kieskaffekaelder.dk','+45 61 71 22 86','4.5',' ');
-                popUpClasses[0].classList.add('sixRestaurant');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
     }else{
         for(let i =imgOn.length; i>0; i--){
             imgOn[i-1].remove();
@@ -252,22 +180,8 @@ function shoppingClick(){
         shoppingCreater('771');
         shoppingCreater('772');
         shoppingCreater('773');
-        shoppingCreater('776');
         shoppingCreater('774');
         shoppingCreater('775');
-
-        imgOn[0].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Straedet Køge','ShoppingOne','Ølbycenter 104, 4600 Køge','www.straedetkoge.dk','+45 50 93 86 27','4.8',' ');
-                popUpClasses[0].classList.add('firstShopping');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        })
         
     }else{
         for(let i =imgOn.length; i>0; i--){
@@ -287,38 +201,31 @@ function harborClick(){
             imgOn[0].addEventListener('click', function(){
             
                 if(popUpClasses.length < 1){
-                    popUpCreator('Ølsemagle Revle','SecShipImg','Revlen 1, 4600 Køge','https://www.visitkoege.dk','','4.5',' ')
-                    popUpClasses[0].classList.add('firstShip');
-                  
+                    popUpCreator('Danhostel','imgFirstBed','Revlen 1, 4600 Køge','www.visitkoege.dk','+45 60 84 14 30','3.8',' ')
+                    popUpClasses[0].classList.add('firstShip')
     
                 }else{
                     for(let i = popUpClasses.length ; i>0; i--){
                         popUpClasses[i-1].remove();
-                        
                     }
                 }
-                
             })
             imgOn[1].addEventListener('click', function(){
             
                 if(popUpClasses.length < 1){
-                    popUpCreator('Køge Svømmeland','firstShipImg','Olbycenter 104, 4600 Køge','www.svoemmeland.dk','+45 56 67 27 70','4.5',' ')
-                    popUpClasses[0].classList.add('secShip');
-                    
-                    
+                    popUpCreator('Køge Svømmeland','imgFirstBed','Olbycenter 104, 4600 Køge','www.svoemmeland.dk','+45 56 67 27 70','4.5',' ')
+                    popUpClasses[0].classList.add('secShip')
     
                 }else{
                     for(let i = popUpClasses.length ; i>0; i--){
                         popUpClasses[i-1].remove();
-                        
                     }
                 }
-               
             })
             imgOn[2].addEventListener('click', function(){
             
                 if(popUpClasses.length < 1){
-                    popUpCreator('Køge Marina','tirthShipImg','Badehavnen 2, 4600 Køge','www.koegemarina.dk','+45 56 66 16 89','4.4',' ')
+                    popUpCreator('Køge Marina','imgFirstBed','Badehavnen 2, 4600 Køge','www.koegemarina.dk','+45 56 66 16 89','4.4',' ')
                     popUpClasses[0].classList.add('tirthShip')
     
                 }else{
@@ -326,12 +233,11 @@ function harborClick(){
                         popUpClasses[i-1].remove();
                     }
                 }
-                
             })
             imgOn[3].addEventListener('click', function(){
             
                 if(popUpClasses.length < 1){
-                    popUpCreator('Søndre Strand','forthShipImg',' 4600 Køge','www.visitkoege.dk','','4.1',' ')
+                    popUpCreator('Søndre Strand','imgFirstBed',' 4600 Køge','www.visitkoege.dk','','4.1',' ')
                     popUpClasses[0].classList.add('forthShip')
     
                 }else{
@@ -343,8 +249,8 @@ function harborClick(){
             imgOn[4].addEventListener('click', function(){
             
                 if(popUpClasses.length < 1){
-                    popUpCreator('Strandvejen','fiveShipImg','Strandvejen, 4600 Køge','www.visitkoege.dk','','3.5',' ')
-                    popUpClasses[0].classList.add('fiveShip');
+                    popUpCreator('Strandvejen','imgFirstBed','Strandvejen, 4600 Køge','www.visitkoege.dk','','3.5',' ')
+                    popUpClasses[0].classList.add('fiveShip')
     
                 }else{
                     for(let i = popUpClasses.length ; i>0; i--){
@@ -364,44 +270,6 @@ function cultureClick(){
     if(imOn.length < 1){
         let popUpClasses = document.getElementsByClassName('popUpContainer');
         cultureCreater('440');
-        cultureCreater('441');
-        cultureCreater('442');
-        imOn[0].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Køge Festival','fisrtCultureImg','Torvet 10, 4600 Køge','www.kogefestuge.dk','','4.1',' ')
-                popUpClasses[0].classList.add('fisrtCulture');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        })
-        imOn[1].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Veteranbiltraef','secondCultureImg','Vintage Car Exposition, 4600 Køge','www.kortilkoge.dk','','4.1',' ')
-                popUpClasses[0].classList.add('secondCulture');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        })
-        imOn[2].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Riddlehouse','thirthtCultureImg','Astervej 23d, 4600 Køge','www.escaperoom-riddlehouse.dk','+45 71 74 91 41','4.5',' ')
-                popUpClasses[0].classList.add('thirthCulture');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        })
     }else{
         for(let i =imOn.length; i>0; i--){
             imOn[i-1].remove();
@@ -414,29 +282,6 @@ function historyClick(){
     if(imOn.length < 1){
         let popUpClasses = document.getElementsByClassName('popUpContainer');
         historyCreater('550');
-        imOn[0].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Kø$ Museum','firstHistoryImg','Nøorregade 29, 4600 Køge','www.koes.dk','+45 56 67 60 20','4.5',' ');
-                popUpCreator('Køge Museum','secondHistoryImg','Nørregade 4, 4600 Køge','www.koegemuseum.dk','+45 70 70 12 36','4.1',' ');
-                popUpCreator('Galleri','thirthHistoryImg','Nørregade 8, 4600 Køge','www.birgitbraender.dk','+45 27 58 86 90','5',' ');
-                popUpCreator('Fafla','fourthHistoryImg','Radhusstraedet 3C, 4600 Køge','www.fafla.dk','+45 52 17 23 42','4.8',' ');
-                popUpCreator('Køge Church','fifthHistoryImg','Kirkestraede 26, 4600 Køge','www.koegekirke.dk.dk','+45 56 65 02 46','4.4',' ');
-                popUpCreator('Nordisk Film','sixthHistoryImg','Antoniestraede 6, 4600 Køge','www.nfbio.dk','+45 70 13 12 11','4.3',' ');
-
-                popUpClasses[0].classList.add('firstHistory');
-                popUpClasses[1].classList.add('secondHistory');
-                popUpClasses[2].classList.add('thirthHistory');
-                popUpClasses[3].classList.add('fourthHistory');
-                popUpClasses[4].classList.add('fiveHistory');
-                popUpClasses[5].classList.add('sixHistory');
-                
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        })
     }else{
         for(let i =imOn.length; i>0; i--){
             imOn[i-1].remove();
@@ -448,44 +293,6 @@ function indoorClick(){
     if(imOn.length < 1){
         let popUpClasses = document.getElementsByClassName('popUpContainer');
         indoorCreater('660');
-        indoorCreater('661');
-        indoorCreater('662');
-        imOn[0].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Riddlehouse','SecShipImg','Astervej 23d, 4600 Køge','www.escaperoom-riddlehouse.dk','+45 71 74 91 41','4.5',' ')
-                popUpClasses[0].classList.add('fistIndoor');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
-        imOn[1].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Riddlehouse','fourthHistoryImg','Astervej 23d, 4600 Køge','www.escaperoom-riddlehouse.dk','+45 71 74 91 41','4.5',' ')
-                popUpClasses[0].classList.add('secondIndoor');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
-        imOn[2].addEventListener('click', function(){
-            
-            if(popUpClasses.length < 1){
-                popUpCreator('Riddlehouse','thirthIndoorImg','Astervej 23d, 4600 Køge','www.escaperoom-riddlehouse.dk','+45 71 74 91 41','4.5',' ')
-                popUpClasses[0].classList.add('thirthIndoor');
-
-            }else{
-                for(let i = popUpClasses.length ; i>0; i--){
-                    popUpClasses[i-1].remove();
-                }
-            }
-        });
     }else{
         for(let i =imOn.length; i>0; i--){
             imOn[i-1].remove();
